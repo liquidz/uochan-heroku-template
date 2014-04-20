@@ -1,0 +1,3 @@
+web: java $JVM_OPTS -cp target/{{sanitized}}-standalone.jar clojure.main -m {{name}}.server $PORT
+
+
