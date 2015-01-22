@@ -26,6 +26,16 @@ git push heroku master
 heroku open
 ```
 
+ * deploy to heroku (using [beco](https://github.com/liquidz/beco))
+```
+beco -i -c heroku /heroku_login.sh
+git init
+git add .
+git commit -am "first commit"
+beco heroku apps:create
+beco -c heroku git push heroku master
+```
+
 ## License
 
 Copyright (c) 2015 [uochan](http://twitter.com/uochan)
